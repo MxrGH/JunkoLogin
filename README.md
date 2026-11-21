@@ -2,7 +2,6 @@
 
 > JunkoLogin is a fork of [AuthMeReloaded](https://github.com/AuthMe/AuthMeReloaded). It retains the upstream GPL-3.0 license and original copyright notices. This fork adds JunkoLogin branding, Turkish localization, and JunkoSMP-oriented authentication defaults.
 
-# AuthMeReloaded
 **"The best authentication plugin for the Bukkit modding API!"**
 
 <img src="wallpaper.png?raw=true" alt="AuthMeLogo"/>
