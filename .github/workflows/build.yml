@@ -1,0 +1,28 @@
+name: JunkoLogin Build
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Java 25
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '25'
+          cache: 'maven'
+
+      - name: Build shaded JAR
+        run: mvn clean package -DskipTests
+
+      - name: Upload JunkoLogin JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: JunkoLogin
+          path: authme-paper/target/JunkoLogin.jar
+          if-no-files-found: error
