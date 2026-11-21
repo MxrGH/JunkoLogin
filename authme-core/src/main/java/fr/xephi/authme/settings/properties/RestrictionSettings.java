@@ -33,7 +33,7 @@ public final class RestrictionSettings implements SettingsHolder {
         "Max number of allowed registrations per IP",
         "The value 0 means an unlimited number of registrations!"})
     public static final Property<Integer> MAX_REGISTRATION_PER_IP =
-        newProperty("settings.restrictions.maxRegPerIp", 1);
+        newProperty("settings.restrictions.maxRegPerIp", 0);
 
     @Comment("Minimum allowed username length")
     public static final Property<Integer> MIN_NICKNAME_LENGTH =
