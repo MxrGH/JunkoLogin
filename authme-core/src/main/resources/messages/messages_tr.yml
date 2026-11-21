@@ -60,13 +60,13 @@ misc:
     password_changed: '&2Sifre basariyla degistirildi!'
     logout: '&2Basariyla cikis yaptin!'
     reload: '&2Ayarlar ve veritabani yenilendi!'
-    usage_change_password: '&cKullanim: /changepassword <eskiSifre> <yeniSifre>'
+    usage_change_password: '&cKullanım: /sifredegistir <eskiŞifre> <yeniŞifre>'
     accounts_owned_self: 'Sen %count hesaba sahipsin:'
     accounts_owned_other: 'Oyuncu %name %count hesaba sahip:'
 
 # Session messages
 session:
-    valid_session: '&2Oturuma girisiniz otomatikmen yapilmistir.'
+    valid_session: '&a[JunkoSMP] Kaydedilen IP Adresin sayesinde giriş yaptın!'
     invalid_session: '&cIP adresin degistirildi ve oturum suren doldu!'
 
 # Error messages when joining
@@ -142,22 +142,22 @@ verification:
 # Dialog UI
 dialog:
   login:
-    title: '&6Giriş'
+    title: '&6Giriş Yap'
     body: '&7Devam etmek için lütfen şifrenizi girin.'
     password: '&fŞifre'
     recovery_email: '&fKurtarma E-postası (isteğe bağlı)'
     recovery_button: '&eŞifrenizi mi unuttunuz?'
-    button: '&aGiriş yap'
-    canceled: '&cYou have canceled the login.'
+    button: '&aGiriş Yap'
+    canceled: '&cGiriş işlemini iptal ettin.'
   register:
-    title: '&6Kayıt'
+    title: '&6Kayıt Ol'
     body: '&7Bu sunucuda oynamaya başlamak için bir hesap oluşturun.'
     password: '&fŞifre'
     confirm_password: '&fŞifreyi onayla'
     email: '&fE-posta'
     confirm_email: '&fE-postayı onayla'
-    button: '&aKaydol'
-    canceled: '&cYou have canceled the registration.'
+    button: '&aKayıt Ol'
+    canceled: '&cKayıt işlemini iptal ettin.'
   two_factor:
     title: '&6İki faktörlü kimlik doğrulama'
     body: '&7Kimlik doğrulama uygulamanızı açın ve 6 haneli kodu girin.'
@@ -170,7 +170,7 @@ dialog:
     button: '&aKurtarma E-postası Gönder'
 
   button:
-    cancel: '&cİptal'
+    cancel: '&cÇıkış'
 
 time:
     second: 'saniye'
@@ -179,8 +179,8 @@ time:
     minutes: 'dakika'
     hour: 'saat'
     hours: 'saat'
-    day: 'gun'
-    days: 'gun'
+    day: 'gün'
+    days: 'gün'
 
 # Two-factor authentication
 two_factor:
