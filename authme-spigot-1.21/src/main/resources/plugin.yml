@@ -1,5 +1,5 @@
 # noinspection YAMLSchemaValidation
-name: ${pluginDescription.name}
+name: JunkoLogin
 # noinspection YAMLSchemaValidation
 authors: [${pluginDescription.authors}]
 website: ${project.parent.url}
@@ -57,9 +57,9 @@ commands:
     usage: /unregister <password>
     aliases:
     - unreg
-  changepassword:
+  sifredegistir:
     description: Change password of an account
-    usage: /changepassword <oldPassword> <newPassword>
+    usage: /sifredegistir <oldPassword> <newPassword>
     aliases:
     - changepass
     - cp
