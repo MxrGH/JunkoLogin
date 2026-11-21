@@ -91,14 +91,16 @@ public class SessionService implements Reloadable {
             return SessionState.NOT_VALID;
         }
         long timeSinceLastLogin = System.currentTimeMillis() - auth.getLastLogin();
+        int timeout = service.getProperty(PluginSettings.SESSIONS_TIMEOUT);
+        boolean sessionExpireOnIpChange = service.getProperty(PluginSettings.SESSION_EXPIRE_ON_IP_CHANGE);
 
-        if (timeSinceLastLogin > 0
-            && timeSinceLastLogin < service.getProperty(PluginSettings.SESSIONS_TIMEOUT) * MILLIS_PER_MINUTE) {
-            if (ipAddress.equals(auth.getLastIp())) {
+        boolean withinTimeout = timeout == 0
+            || (timeSinceLastLogin >= 0 && timeSinceLastLogin < timeout * MILLIS_PER_MINUTE);
+        if (withinTimeout) {
+            if (!sessionExpireOnIpChange || ipAddress.equals(auth.getLastIp())) {
                 return SessionState.VALID;
-            } else {
-                return SessionState.IP_CHANGED;
             }
+            return SessionState.IP_CHANGED;
         }
         return SessionState.OUTDATED;
     }
