@@ -72,10 +72,10 @@
         <maven.minimumVersion>3.8.8</maven.minimumVersion>
 
         <!-- Versioning properties -->
-        <project.outputName>AuthMe</project.outputName>
+        <project.outputName>JunkoLogin</project.outputName>
         <project.buildNumber>CUSTOM</project.buildNumber>
         <project.versionCode>${project.version}-b${project.buildNumber}</project.versionCode>
-        <project.finalNameBase>${project.outputName}-${project.version}</project.finalNameBase>
+        <project.finalNameBase>JunkoLogin</project.finalNameBase>
 
         <!-- Plugin description file properties -->
         <pluginDescription.name>${project.outputName}</pluginDescription.name>
