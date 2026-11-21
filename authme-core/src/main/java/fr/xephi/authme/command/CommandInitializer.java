@@ -140,7 +140,7 @@ public class CommandInitializer {
         // Register the base changepassword command
         CommandDescription changePasswordBase = CommandDescription.builder()
             .parent(null)
-            .labels("changepassword", "changepass", "cp")
+            .labels("sifredegistir", "changepass", "cp")
             .description("Change password of an account")
             .detailedDescription("Command to change your password using AuthMeReloaded.")
             .withArgument("oldPassword", "Old password", MANDATORY)
