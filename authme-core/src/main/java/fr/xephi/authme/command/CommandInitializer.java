@@ -137,12 +137,12 @@ public class CommandInitializer {
             .executableCommand(UnregisterCommand.class)
             .register();
 
-        // Register the base changepassword command
+        // Register the player password-change command
         CommandDescription changePasswordBase = CommandDescription.builder()
             .parent(null)
             .labels("sifredegistir", "changepass", "cp")
             .description("Change password of an account")
-            .detailedDescription("Command to change your password using AuthMeReloaded.")
+            .detailedDescription("Command to change your password using JunkoLogin.")
             .withArgument("oldPassword", "Old password", MANDATORY)
             .withArgument("newPassword", "New password", MANDATORY)
             .permission(PlayerPermission.CHANGE_PASSWORD)
@@ -250,7 +250,7 @@ public class CommandInitializer {
             .executableCommand(ForceLoginCommand.class)
             .register();
 
-        // Register the changepassword command
+        // Register the administrator password-change subcommand
         CommandDescription.builder()
             .parent(authmeBase)
             .labels("password", "changepassword", "changepass", "cp")
