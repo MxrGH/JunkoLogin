@@ -5,81 +5,81 @@
 
 # Registration
 registration:
-    disabled: '&cOyun icin kayit olma kapatildi!'
-    name_taken: '&cSenin adinda daha once birisi kaydolmus!'
-    register_request: '&3Lutfen kayit komutunu kullanin "/register <sifre> <TekrarSifre>"'
-    command_usage: '&cKullanim: /register <sifre> <TekrarSifre>'
-    reg_only: '&4Sunucuya kayit sadece internet uzerinden yapilmakta! Lutfen http://ornek.com sitesini kayit icin ziyaret edin!'
-    success: '&2Basariyla kaydoldun!'
-    kicked_admin_registered: 'Bir yetkili seni kayit etti; tekrardan giris yap'
+    disabled: '&cSunucuda hesap kaydı devre dışı.'
+    name_taken: '&cBu kullanıcı adıyla zaten bir hesap kayıtlı!'
+    register_request: '&3Lütfen kayıt olmak için "/register <şifre> <şifreyi tekrar girin>" komutunu kullanın.'
+    command_usage: '&cKullanım: /register <şifre> <şifreyi tekrar girin>'
+    reg_only: '&4Kayıt işlemi yalnızca web sitesi üzerinden yapılabilir. Lütfen http://ornek.com adresini ziyaret edin.'
+    success: '&2Başarıyla kayıt oldun!'
+    kicked_admin_registered: 'Bir yetkili hesabını kaydetti. Lütfen yeniden giriş yap.'
 
 # Password errors on registration
 password:
-    match_error: '&cSifre eslesmiyor, tekrar deneyin!'
-    name_in_password: '&cSifrenize adinizi koyamazsiniz, lutfen farkli bir sifre secin...'
-    unsafe_password: '&cSectiginiz sifre guvenli degil, lutfen farkli bir sifre secin...'
-    forbidden_characters: '&4Sifrenizde izin verilmeyen karakterler bulunmakta. Izin verilen karakterler: %valid_chars'
-    wrong_length: '&cSenin sifren ya cok kisa yada cok uzun! Lutfen farkli birsey dene!'
+    match_error: '&cŞifreler eşleşmiyor. Lütfen tekrar deneyin!'
+    name_in_password: '&cŞifreniz kullanıcı adınızı içeremez. Lütfen farklı bir şifre seçin.'
+    unsafe_password: '&cSeçtiğiniz şifre yeterince güvenli değil. Lütfen başka bir şifre seçin.'
+    forbidden_characters: '&4Şifrenizde izin verilmeyen karakterler var. İzin verilen karakterler: %valid_chars'
+    wrong_length: '&cŞifreniz çok kısa veya çok uzun. Lütfen başka bir şifre deneyin.'
 
 # Login
 login:
-    command_usage: '&cKullanim: /login <sifre>'
-    wrong_password: '&cYanlis sifre!'
-    success: '&2Giris basarili!'
-    login_request: '&cLutfen giris komutunu kullanin "/login <sifre>"'
-    timeout_error: '&4Giris izni icin verilen zaman suresini astigin icin sunucudan atildin, tekrar deneyin!'
+    command_usage: '&cKullanım: /login <şifre>'
+    wrong_password: '&cYanlış şifre!'
+    success: '&2Giriş başarılı!'
+    login_request: '&cLütfen giriş yapmak için "/login <şifre>" komutunu kullanın.'
+    timeout_error: '&4Giriş süreniz dolduğu için sunucudan çıkarıldınız. Lütfen yeniden bağlanın.'
 
 # Errors
 error:
-    denied_command: '&cSuanda bu komutu kullanamazsin!'
-    denied_chat: '&cSuanda sohbeti kullanamazsin!'
-    unregistered_user: '&cBu oyuncu kayitli degil!'
-    not_logged_in: '&cGiris yapmadin!'
-    no_permission: '&4Bunu yapmak icin iznin yok!'
-    unexpected_error: '&4Beklenmedik bir hata olustu, yetkili ile iletisime gecin!'
-    max_registration: '&cSen maksimum kayit sinirini astin (%reg_count/%max_acc %reg_names)!'
-    logged_in: '&cZaten giris yaptin!'
-    kick_for_vip: '&3Bir VIP oyuna giris yaptigi icin atildin!'
-    kick_unresolved_hostname: '&cBir hata olustu: cozumlenemeyen oyuncu bilgisayar adi!'
-    tempban_max_logins: '&cBir cok kez yanlis giris yaptiginiz icin gecici olarak banlandiniz.'
+    denied_command: '&cHenüz bu komutu kullanamazsınız!'
+    denied_chat: '&cHenüz sohbeti kullanamazsınız!'
+    unregistered_user: '&cBu oyuncunun kayıtlı bir hesabı yok!'
+    not_logged_in: '&cHenüz giriş yapmadınız!'
+    no_permission: '&4Bunu yapmak için yetkiniz yok!'
+    unexpected_error: '&4Beklenmeyen bir hata oluştu. Lütfen bir yetkiliyle iletişime geçin.'
+    max_registration: '&cBu IP adresi için izin verilen hesap sayısına ulaşıldı (%reg_count/%max_acc %reg_names)!'
+    logged_in: '&cZaten giriş yaptınız!'
+    kick_for_vip: '&3Bir VIP oyuncuya yer açmak için sunucudan çıkarıldınız.'
+    kick_unresolved_hostname: '&cBir hata oluştu: oyuncunun ana bilgisayar adı çözümlenemedi.'
+    tempban_max_logins: '&cÇok fazla hatalı giriş denemesi yaptığınız için geçici olarak yasaklandınız.'
 
 # AntiBot
 antibot:
-    kick_antibot: 'AntiBot koruma modu aktif! Birkac dakika sonra tekrar girmeyi deneyin.'
-    auto_enabled: '&4[AntiBotServis] Saldiri oldugu icin AntiBot aktif edildi!'
-    auto_disabled: '&2[AntiBotServis] AntiBot, %m dakika sonra deaktif edilecek!'
+    kick_antibot: 'AntiBot koruması etkin. Lütfen birkaç dakika sonra tekrar deneyin.'
+    auto_enabled: '&4[AntiBot] Saldırı tespit edildiği için koruma etkinleştirildi!'
+    auto_disabled: '&2[AntiBot] Koruma %m dakika sonra devre dışı bırakılacak.'
 
 # Unregister
 unregister:
-    success: '&cKayit basariyla kaldirildi!'
-    command_usage: '&cKullanim: /unregister <sifre>'
+    success: '&cHesabınız başarıyla silindi!'
+    command_usage: '&cKullanım: /unregister <şifre>'
 
 # Other messages
 misc:
-    account_not_activated: '&cHeabiniz henuz aktif edilmemis, e-postanizi kontrol edin!'
-    password_changed: '&2Sifre basariyla degistirildi!'
-    logout: '&2Basariyla cikis yaptin!'
-    reload: '&2Ayarlar ve veritabani yenilendi!'
+    account_not_activated: '&cHesabınız henüz etkinleştirilmedi. Lütfen e-postanızı kontrol edin.'
+    password_changed: '&2Şifreniz başarıyla değiştirildi!'
+    logout: '&2Başarıyla çıkış yaptınız!'
+    reload: '&2Ayarlar ve veritabanı yenilendi!'
     usage_change_password: '&cKullanım: /sifredegistir <eskiŞifre> <yeniŞifre>'
-    accounts_owned_self: 'Sen %count hesaba sahipsin:'
-    accounts_owned_other: 'Oyuncu %name %count hesaba sahip:'
+    accounts_owned_self: '%count hesabınız var:'
+    accounts_owned_other: '%name adlı oyuncunun %count hesabı var:'
 
 # Session messages
 session:
     valid_session: '&a[JunkoSMP] Kaydedilen IP Adresin sayesinde giriş yaptın!'
-    invalid_session: '&cIP adresin degistirildi ve oturum suren doldu!'
+    invalid_session: '&cIP adresiniz değiştiği için kayıtlı oturumunuz geçersiz oldu.'
 
 # Error messages when joining
 on_join_validation:
-    same_ip_online: 'Oyunda sizin ipnizden giren biri bulunmakta!'
-    same_nick_online: '&4Senin isminde bir oyuncu suncuda bulunmakta!'
-    name_length: '&4Senin ismin ya cok kisa yada cok uzun!'
-    characters_in_name: '&4Senin isminde uygunsuz karakterler bulunmakta. Izin verilen karakterler: %valid_chars'
-    kick_full_server: '&4Sunucu suanda dolu, daha sonra tekrar deneyin!'
-    country_banned: '&4Senin bolgen sunucudan yasaklandi!'
-    not_owner_error: 'Bu hesabin sahibi degilsin. Lutfen farkli bir isim sec!'
-    invalid_name_case: 'Oyuna %valid isminde katilmalisin. %invalid ismini kullanarak katilamazsin.'
-    quick_command: 'Bu komutu cok hizli kullandin! Lutfen, sunucuya tekrar gir ve herhangi bir komut kullanmadan once biraz bekle.'
+    same_ip_online: 'Bu IP adresinden başka bir oyuncu zaten çevrimiçi!'
+    same_nick_online: '&4Bu kullanıcı adıyla başka bir oyuncu zaten sunucuda!'
+    name_length: '&4Kullanıcı adınız çok kısa veya çok uzun!'
+    characters_in_name: '&4Kullanıcı adınızda izin verilmeyen karakterler var. İzin verilen karakterler: %valid_chars'
+    kick_full_server: '&4Sunucu şu anda dolu. Lütfen daha sonra tekrar deneyin!'
+    country_banned: '&4Bulunduğunuz bölgeden sunucuya erişim yasaklanmış.'
+    not_owner_error: 'Bu hesabın sahibi değilsiniz. Lütfen kendi kullanıcı adınızı kullanın.'
+    invalid_name_case: 'Sunucuya %valid kullanıcı adıyla katılmalısınız; %invalid adıyla giriş yapamazsınız.'
+    quick_command: 'Bu komutu çok hızlı kullandınız. Lütfen yeniden bağlanın ve komut kullanmadan önce biraz bekleyin.'
 
 # Email
 email:
@@ -159,9 +159,9 @@ dialog:
     button: '&aKayıt Ol'
     canceled: '&cKayıt işlemini iptal ettin.'
   two_factor:
-    title: '&6İki faktörlü kimlik doğrulama'
+    title: '&6İki Aşamalı Doğrulama'
     body: '&7Kimlik doğrulama uygulamanızı açın ve 6 haneli kodu girin.'
-    code: '&f2FA kodu'
+    code: '&fDoğrulama kodu'
     button: '&aDoğrula'
   recovery:
     title: '&6Şifre Kurtarma'
